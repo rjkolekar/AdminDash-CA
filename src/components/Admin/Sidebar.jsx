@@ -19,14 +19,14 @@ const Sidebar = () => {
   return (
     <>
       <div
-        className={`text-white  font-serif border fixed  pl-2 border-x-teal-500 shadow-xl bg-gray-100 duration-300  ${
-          toggle ? "w-[200px]" : "w-14 "
+        className={`text-white  font-serif fixed   bg-#010026 duration-300  ${
+          toggle ? "w-[200px]" : "w-12 "
         } h-screen  `}
       >
         <div className="text-sm mt-4 font-extrabold text-teal-500 flex items-center justify-between p-0 ">
-          <h1 className={` ${!toggle ? "text-sm" : "text-3xl"}`}>ERP-CA</h1>
+          <h1 className={` ${!toggle ? "hidden" : "text-3xl"}`}>ERP-CA</h1>
           <GoThreeBars
-            className="text-lg text-black"
+            className="text-4xl  p-2"
             onClick={() => setToggle(!toggle)}
           />
         </div>
@@ -36,59 +36,59 @@ const Sidebar = () => {
             <div className="items-center justify-between">
               <>
                 {" "}
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4  ">
-                  <DashboardIcon className="text-4xl group-hover:group-[hdfhhg]"/>
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4  ">
+                  <DashboardIcon className="text-4xl "/>
                   <Link
                     to="/"
-                    className={`pl- ${!toggle && "hidden"} 
+                    className={` ${!toggle && "hidden"} 
                  `}
                   >
                     Dashboard
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4 ">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4 ">
                   <SiC className="text-xl" />
                   <Link to="/clients" className={`pl-2 ${!toggle && "hidden"} 
                  `}>
                     Clients
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4 ">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4 ">
                   <BiTask className="text-xl"/>
                   <Link to="/employees" className={`pl-2 ${!toggle && "hidden"} 
                  `}>
                     Employees
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4 ">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4 ">
                   <FcDepartment className="text-xl" />
                   <Link to="/departments" className={`pl-2 ${!toggle && "hidden"} 
                  `}>
                     Task Management
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4 ">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4 ">
                   <TbReportSearch className="text-xl"/>
                   <Link to="/report" className={`pl-2 ${!toggle && "hidden"} 
                  `}>
                     View Reports
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4 ">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4 ">
                   <AiOutlineUsergroupAdd className="text-xl"/>
                   <Link to="/add" className={`pl-2 ${!toggle && "hidden"} 
                  `}>
                     Add Partners
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400 text-black text-sm items-center gap-x-4  mt-[240px]">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4  mt-[240px]">
                   <FiSettings className="text-xl"/>
                   <Link to="/settings" className={`pl-2 ${!toggle && "hidden"} 
                  `}>
                     Settings
                   </Link>
                 </li>
-                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-400  text-sm items-center gap-x-4  text-red-700">
+                <li className="flex  rounded-md p-2 cursor-pointer hover:bg-teal-500  text-sm items-center gap-x-4  text-red-700">
                   <AiOutlineLogout className="text-xl"/>
                   <Link to="/logout" className={`pl-2 ${!toggle && "hidden"} 
                  `}>

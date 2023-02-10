@@ -10,8 +10,10 @@ import ProtectedRoute from "./ProtectedRoute";
 import VeiwReport from "./pages/ViewReport";
 import Logout from "./Logout";
 import Login from "./Login";
+
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Registration from "./pages/Registration";
+import Register from "./pages/Register";
 import Payment from "./Payment";
 import Navbar from "./Navbar";
 
@@ -36,7 +38,9 @@ const Dashboard = () => {
            {/* </Route> <Route path="/navbar" element={<Navbar />}> */}
            
           <Route path="/login" element={<Login />}></Route>
-          <Route path="/registration" element={<Registration />}></Route>
+         
+
+          <Route path="/register" element={<Register />}></Route>
           <Route path="/payment" element={<Payment />}></Route>
         </Routes>
       </Router>

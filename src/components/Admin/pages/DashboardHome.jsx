@@ -2,7 +2,7 @@ import React from "react";
 import { SlPeople } from "react-icons/Sl";
 const Home = () => {
   return (
-    <div className="ml-[200px] bg-white rounded-md p-4">
+    <div className="ml-[200px] bg-#010026 rounded-md p-4">
       <div>
         <h1 className="text-xl text-teal-600 mb-2">Dashboard</h1>
       </div>
