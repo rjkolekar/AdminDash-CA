@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/Fc";
-import { BsGithub } from "react-icons/Bs";
+import { AiFillGithub } from "react-icons/Ai";
 export default function Login() {
   return (
     <>
@@ -20,7 +20,7 @@ export default function Login() {
                     className="bg-white  active:bg-blueGray-50 text-blueGray-700 font-semibold px-4 py-2 rounded outline-none focus:outline-none mr-2 mb-1 uppercase shadow hover:shadow-md inline-flex items-center text-xs ease-linear transition-all duration-150"
                     type="button"
                   >
-                    <BsGithub
+                    <AiFillGithub
                      
                       className="text-xl mr-1"
                      

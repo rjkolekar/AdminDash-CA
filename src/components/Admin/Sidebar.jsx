@@ -14,7 +14,7 @@ import { BiTask } from "react-icons/Bi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 const Sidebar = () => {
-  const auth = localStorage.getItem("user");
+  // const auth = localStorage.getItem("user");
   const [toggle, setToggle] = useState(true);
   return (
     <>
@@ -102,7 +102,7 @@ const Sidebar = () => {
                  `}></Link>
                 </li>
                 <li>
-                  <Link to="/registration" className={`pl-2 ${!toggle && "hidden"} 
+                  <Link to="/register" className={`pl-2 ${!toggle && "hidden"} 
                  `}></Link>
                 </li>
               </>
